@@ -37,9 +37,9 @@ app.get('/', function(req, res){
     res.render('pages/index');
 });
 
-app.get('/dataform', function(req, res){
+app.get('/martial-arts', function(req, res){
     if(!req.session.loggedin){res.redirect('/');return;}
-    res.render('pages/dataform');
+    res.render('pages/martial-arts');
 });
 
 app.get('/signup', function(req, res){

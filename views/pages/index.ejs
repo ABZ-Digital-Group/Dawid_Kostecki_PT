@@ -8,21 +8,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <img src="assets/DawidKosteckiLogo.png" alt="Dawid Kostecki Logo">
-            </div>
-            <div>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Programs</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+        <%- include('../partials/nav') %>
         <video src="assets/0215.mp4" autoplay muted loop>
-            <!-- <source src="assets/gym_hero_web.mp4" type="video/mp4">
-            Your browser does not support the video tag. -->
+            Your browser does not support the video.
         </video>
        
     </header>
@@ -45,16 +33,12 @@
             </div>
         </section>
 
-
-
-
-
-        <section class="projects">
-            <div class="projectTitle">
+        <section class="program">
+            <div class="programTitle">
                 <h1>Programs</h1>
             </div>
             
-            <div class="projectCards">
+            <div class="programCards">
                 <div class="card">
                     <div>
                         <img src="assets/MartialArts.jpg" alt="">
@@ -67,7 +51,7 @@
                             and a real-time dashboard that displays low-stock alerts. 
                         </p> -->
                     </div>
-                    <a href=""><button>Learn More</button></a>
+                    <a href="/martial-arts"><button>Learn More</button></a>
                 </div>
 
                 <div class="card">
@@ -102,29 +86,9 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
     </main>
     <footer>
-        <div class="copyright">
-            <img src="assets/DawidKosteckiLogo.png" alt="Dawid Kostecki Logo">
-            <p>2026 &copy; DKPT</p>
-            <P>Designed By ABZ DIGITAL GROUP</P>
-        </div>
-        <div class="socials">
-            <a href=""><img src="assets/instagram.svg" alt="Dawid Kostecki Logo"></a>
-            <a href=""><img src="assets/facebook.svg" alt="Dawid Kostecki Logo"></a>
-            <a href=""><img src="assets/x.svg" alt="Dawid Kostecki Logo"></a>
-            <a href=""><img src="assets/youtube.svg" alt="Dawid Kostecki Logo"></a>
-        </div>
-        
+       <%- include('../partials/footer') %>
     </footer>
 </body>
 </html>
