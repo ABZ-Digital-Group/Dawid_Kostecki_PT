@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "init": "^0.1.2",
+    "node.js": "^0.0.1-security"
+  },
+  "name": "dawid_kostecki_pt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABZ-Digital-Group/Dawid_Kostecki_PT.git"
+  },
+  "author": "ABZ DIGITAL GROUP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABZ-Digital-Group/Dawid_Kostecki_PT/issues"
+  },
+  "homepage": "https://github.com/ABZ-Digital-Group/Dawid_Kostecki_PT#readme"
+}
