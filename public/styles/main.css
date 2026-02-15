@@ -42,16 +42,125 @@ video{
     object-fit: cover;
 }
 
+/* MAIN */
+
+/* ABOUT */
+.about{
+    margin: auto;
+    width: 60%;
+    padding: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.bio{
+    width: 50%;
+    font-size: 24px;
+}
+.bio h1{
+    color: #BE8661;
+}
+.profilePic img{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+.projects{
+    padding-bottom: 100px;
+    
+    background-color: #212121;
+    opacity: 1;
+    background-image:  radial-gradient(#BE8661 1.6px, transparent 1.6px), radial-gradient(#BE8661 1.6px, #212121 1.6px);
+    background-size: 64px 64px;
+    background-position: 0 0,32px 32px;
+    
+}
+.projectTitle h1{
+    padding: 50px;
+    font-size: 48px;
+}
+.projectCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    position: relative;
+    background-color: #FDFDFD;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
+    height: 800px;
+}
+.card img{
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardTxt h1{
+    color: #BE8661;
+    padding: 20px;
+}
+.cardTxt p{
+    margin: 20px;
+    font-size: 18px;
+}
+.card button{
+    position: absolute;
+    bottom: 0;
+    
+    
+    margin: 20px;
+    padding: 15px;
+    background-color: #212121;
+    color: #FDFDFD;
+    font-size: 20px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor:pointer;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 
 footer{
     border-top: 2px solid #BE8661;
     padding: 20px;
    
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
 }
 footer img{
     width: 200px;
     height: 110px;
+}
+.socials{
+    
+}
+.socials img{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
 }
