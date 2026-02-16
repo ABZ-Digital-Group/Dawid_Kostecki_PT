@@ -31,26 +31,22 @@ async function connectDB(){
 
 // RENDER PAGES
 
-
-// INDEX PAGE
 app.get('/', function(req, res){
     res.render('pages/index');
 });
 
 app.get('/martial-arts', function(req, res){
-    if(!req.session.loggedin){res.redirect('/');return;}
     res.render('pages/martial-arts');
 });
 
-app.get('/signup', function(req, res){
-    res.render('pages/signup');
+app.get('/performance', function(req, res){
+    res.render('pages/performance');
 });
 
+app.get('/online-coaching', function(req, res){
+    res.render('pages/online-coaching');
+});
 
-
-//LOGOUT
-// app.get('/logout', function(req, res){
-//     req.session.loggedin = false;
-//     req.session.destroy();
-//     res.redirect('/');
-// });
+app.get('/contact', function(req, res){
+    res.render('pages/contact');
+});
