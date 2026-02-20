@@ -134,6 +134,9 @@ video{
     width: 500px;
     height: 800px;
 }
+.card a{
+    width: 100%;
+}
 .card img{
     width: 500px;
     height: 450px;
@@ -286,4 +289,167 @@ footer img{
     padding: 10px;
     width: 50px;
     height: 50px;
+}
+
+
+
+div#dpd-widget-0._dpd-widget_container div._dpd-widget_content, div#dpd-widget-0._dpd-widget_container div._dpd-widget_image, div#dpd-widget-0._dpd-widget_container div._dpd-widget_title_box {
+    background-color: #ffffff;
+    border-color: #c7c7c7;
+}
+._dpd-widget_container ._dpd-widget_content, ._dpd-widget_container ._dpd-widget_image, ._dpd-widget_container._dpd-widget_landscape ._dpd-widget_content, ._dpd-widget_container._dpd-widget_landscape ._dpd-widget_image, ._dpd-widget_container ._dpd-widget_price_input input, ._dpd-widget_container ._dpd-widget_price_input span, ._dpd-widget_container ._dpd-widget_title_box {
+    border-color: #c7c7c7;
+    max-width: 550px;
+}
+._dpd-widget_container ._dpd-widget_content, ._dpd-widget_container ._dpd-widget_price_input input, ._dpd-widget_container ._dpd-widget_price_input span {
+    background: white;
+}
+._dpd-widget_container ._dpd-widget_content {
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    padding: 24px;
+    margin: 0;
+}
+._dpd-widget_container, ._dpd-widget_container * {
+    /* -webkit-box-sizing: content-box; */
+    -moz-box-sizing: content-box;
+    /* box-sizing: content-box; */
+    /* line-height: normal; */
+    /* width: 100%; */
+    /* border-radius: 20px; */
+}
+._dpd-button_container, ._dpd-button_container *, ._dpd-widget_container, ._dpd-widget_container * {
+    opacity: 1;
+}
+._dpd-widget_container, ._dpd-widget_container * {
+    /* -webkit-box-sizing: content-box; */
+    -moz-box-sizing: content-box;
+    /* box-sizing: content-box; */
+    /* line-height: normal; */
+    /* width: 100%; */
+    /* border-radius: 20px; */
+}
+._dpd-widget_container {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    /* height: 100%; */
+}
+div#dpd-widget-0._dpd-widget_container div._dpd-widget_content, div#dpd-widget-0._dpd-widget_container div._dpd-widget_image, div#dpd-widget-0._dpd-widget_container div._dpd-widget_title_box {
+    background-color: #ffffff;
+    border-color: #c7c7c7;
+}
+._dpd-widget_container ._dpd-widget_content, ._dpd-widget_container ._dpd-widget_image, ._dpd-widget_container._dpd-widget_landscape ._dpd-widget_content, ._dpd-widget_container._dpd-widget_landscape ._dpd-widget_image, ._dpd-widget_container ._dpd-widget_price_input input, ._dpd-widget_container ._dpd-widget_price_input span, ._dpd-widget_container ._dpd-widget_title_box
+
+ {
+    border-color: #c7c7c7;
+    max-width: 550px;
+}
+._dpd-widget_container ._dpd-widget_image {
+    text-align: center;
+    line-height: 0;
+    border: solid 1px;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+._dpd-widget_container, ._dpd-widget_container * {
+    /* -webkit-box-sizing
+Box Model addition in CSS3.
+: content-box; */
+    -moz-box-sizing: content-box;
+    /* box-sizing: content-box; */
+    /* line-height: normal; */
+    /* width: 100%; */
+    /* border-radius: 20px; */
+}
+._dpd-button_container, ._dpd-button_container *, ._dpd-widget_container, ._dpd-widget_container * {
+    opacity: 1;
+}
+
+div#dpd-widget-0._dpd-widget_container div._dpd-widget_content, div#dpd-widget-0._dpd-widget_container div._dpd-widget_image, div#dpd-widget-0._dpd-widget_container div._dpd-widget_title_box
+
+ {
+    background-color: #ffffff;
+    border-color: #c7c7c7;
+}
+._dpd-widget_container ._dpd-widget_content, ._dpd-widget_container ._dpd-widget_image, ._dpd-widget_container._dpd-widget_landscape ._dpd-widget_content, ._dpd-widget_container._dpd-widget_landscape ._dpd-widget_image, ._dpd-widget_container ._dpd-widget_price_input input, ._dpd-widget_container ._dpd-widget_price_input span, ._dpd-widget_container ._dpd-widget_title_box {
+    border-color: #c7c7c7;
+    max-width: 550px;
+}
+._dpd-widget_container ._dpd-widget_content, ._dpd-widget_container ._dpd-widget_price_input input, ._dpd-widget_container ._dpd-widget_price_input span {
+    background: white;
+}
+._dpd-widget_container ._dpd-widget_content {
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    padding: 24px;
+    margin: 0;
+}/* Shorthand property for setting border width, style and color
+
+Widely available across major browsers (Baseline since January 2018)
+Learn more
+
+Don't show */
+
+
+._dpd-widget_container, ._dpd-widget_container * {
+    /* -webkit-box-sizing: content-box; */
+    -moz-box-sizing: content-box;
+    /* box-sizing: content-box; */
+    /* line-height: normal; */
+    /* width: 100%; */
+    /* border-radius: 20px; */
+}
+._dpd-button_container, ._dpd-button_container *, ._dpd-widget_container, ._dpd-widget_container *
+
+ {
+    opacity: 1;
+}
+
+._dpd-widget_container ._dpd-widget_title {
+    display: inline-block;
+    width: 50%;
+    vertical-align
+/* Affects the vertical positioning of the inline boxes generated by an inline-level element inside a line box.
+
+Widely available across major browsers (Baseline since January 2018)
+Learn more
+
+Don't show */
+: top;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div {
+    display: block;
+    unicode-bidi: isolate;
 }

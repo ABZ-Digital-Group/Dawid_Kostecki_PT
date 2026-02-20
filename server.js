@@ -50,3 +50,6 @@ app.get('/online-coaching', function(req, res){
 app.get('/contact', function(req, res){
     res.render('pages/contact');
 });
+
+
+
