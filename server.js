@@ -9,7 +9,13 @@ let express = require('express');
 let session = require('express-session');
 let bodyParser = require('body-parser');
 const {Console, profile} = require('console');
+
+var nodemailer = require('nodemailer');
+var cors = require('cors');
+const fs = require('fs');
+const creds = require('./config');
 const app = express();
+app.use(cors());
 
 app.use(session({secret: 'example'}));
 app.use(express.static('public'));
@@ -49,6 +55,10 @@ app.get('/online-coaching', function(req, res){
 
 app.get('/contact', function(req, res){
     res.render('pages/contact');
+});
+
+app.get('/test', (req, res) => {
+    res.json('hi');
 });
 
 

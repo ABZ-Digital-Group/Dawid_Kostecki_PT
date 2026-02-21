@@ -312,7 +312,8 @@ footer img{
     border-radius: 20px !important;
 }
 ._dpd-widget_container ._dpd-widget_image img {
- 
+    object-fit: cover !important;
+    /* height: 100% !important; */
     width: 100% !important;
     
 }
