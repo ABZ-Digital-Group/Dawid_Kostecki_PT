@@ -31,7 +31,7 @@ contactForm.addEventListener('submit', async (e) => {
         });
 
         const result = await response.json();
-        alert(result.message);
+        console.log(result.message);
         if (result.status === 'success') contactForm.reset();
 
     } catch (err) {

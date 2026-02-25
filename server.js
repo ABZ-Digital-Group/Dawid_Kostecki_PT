@@ -71,12 +71,35 @@ app.post('/send-email', async (req, res) => {
                         <p style="margin: 5px 0 0;">Service by ABZ DIGITAL GROUP</p>
                     </div>
                 </div>
+                <div style="text-align: center; max-width: 250px; margin: 0 auto; padding-top: 15px;">
+                    <div style="height: 3px; background-color: #D0021B; margin-bottom: 10px; width: 60px; display: inline-block;"></div>
+                    
+                    <a href="https://abzdigitalgroup.com" target="_blank" style="text-decoration: none; display: block; background-color: #161616; padding: 20px; border-radius: 8px;">
+                        <img src="cid:abzLogo" 
+                            alt="ABZ Digital Group" 
+                            width="160" 
+                            style="display: block; margin: 0 auto; border: 0;">
+                    </a>
+                    <p style="margin-top: 10px; font-family: Arial, sans-serif; font-size: 11px; color: #D0021B; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">
+                        Provided By
+                    </p>
+                    <p style="margin-top: 10px; font-family: Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">
+                        <a href="https://abzdigitalgroup.com" 
+                        style="color: #D0021B !important; text-decoration: none !important; border: none !important;">
+                        abzdigitalgroup.com
+                        </a>
+                    </p>
+                </div>
             </div>
             `,
             attachments: [{
                 filename: 'logo.png',
                 path: __dirname + '/public/assets/DawidKosteckiLogo.png',
                 cid: 'logo' 
+            },{
+                filename: 'abzLogo.png',
+                path: __dirname + '/public/assets/ABZ_Digital_Group_Logo.png',
+                cid: 'abzLogo' 
             }]
         });
 
