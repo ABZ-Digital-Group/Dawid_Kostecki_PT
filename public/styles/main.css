@@ -124,6 +124,8 @@ video{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 20px; /* row-gap column gap */
     justify-content: space-evenly;
 }
 .card{

@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
     <header>
-        <%- include('../partials/nav') %>
+      <nav>
+        <div>
+          <img src="assets/DawidKosteckiLogo.png" alt="Dawid Kostecki Logo" />
+        </div>
+        <div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
-        
-        
-        <p class="textOnline">ONLINE COACHING</p>
-
+      <p class="textOnline">ONLINE COACHING</p>
     </header>
     <main>
-       <section class="program">
-            <div class="programTitle">
-                <h1></h1>
-            </div>
-            
-            <div class="programCards">
-                <div class="card">
-                    <div>
-                        <img src="assets/DawidKosteckiLogoIcon.png" alt="">
-                    </div>
-                    <div class="cardTxt">
-                        <h1>Premium Online <br>Coaching</h1>
-                        <p>Duration - 3 Months</p>
-                        <h1>£119.00</h1>
-                    </div>
-                    <a href="https://www.trainerize.me/checkout/dawidkosteckipt/Dawid.Kostecki?planGUID=539be3c3aaac4bce81762ee3013ddf4a&mode=checkout"><button>Purchase</button></a>
-                </div>
+      <section class="program">
+        <div class="programTitle">
+          <h1></h1>
+        </div>
 
-                <div class="card">
-                    <div>
-                        <img src="assets/DawidKosteckiLogoIcon.png" alt="">
-                    </div>
-                    <div class="cardTxt">
-                        <h1>Premium Online <br>Coaching</h1>
-                        <p>Duration - 6 Months</p>
-                        <h1>£109.00</h1>
-                    </div>
-                    <a href="https://www.trainerize.me/checkout/dawidkosteckipt/Dawid.Kostecki?planGUID=9969193eeb85416997b6b07c22a0145c&mode=checkout"><button>Purchase</button></a>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="assets/DawidKosteckiLogoIcon.png" alt="">
-                    </div>
-                    <div class="cardTxt">
-                        <h1>Premium Online <br>Coaching</h1>
-                        <p>Duration - 12 Months</p>
-                        <h1>£99.00</h1>
-                    </div>
-                    <a href="https://www.trainerize.me/checkout/dawidkosteckipt/Dawid.Kostecki?planGUID=06b18bcb21a64546ace0b0eced942b59&mode=checkout"><button>Purchase</button></a>
-                </div>
+        <div class="programCards">
+          <div class="card">
+            <div>
+              <img src="assets/DawidKosteckiLogoIcon.png" alt="" />
             </div>
-        </section>
+            <div class="cardTxt">
+              <h1>Premium Online <br />Coaching</h1>
+              <p>Duration - 3 Months</p>
+              <h1>£119.00</h1>
+            </div>
+            <a
+              href="https://www.trainerize.me/checkout/dawidkosteckipt/Dawid.Kostecki?planGUID=539be3c3aaac4bce81762ee3013ddf4a&mode=checkout"
+              ><button>Purchase</button></a
+            >
+          </div>
+
+          <div class="card">
+            <div>
+              <img src="assets/DawidKosteckiLogoIcon.png" alt="" />
+            </div>
+            <div class="cardTxt">
+              <h1>Premium Online <br />Coaching</h1>
+              <p>Duration - 6 Months</p>
+              <h1>£109.00</h1>
+            </div>
+            <a
+              href="https://www.trainerize.me/checkout/dawidkosteckipt/Dawid.Kostecki?planGUID=9969193eeb85416997b6b07c22a0145c&mode=checkout"
+              ><button>Purchase</button></a
+            >
+          </div>
+
+          <div class="card">
+            <div>
+              <img src="assets/DawidKosteckiLogoIcon.png" alt="" />
+            </div>
+            <div class="cardTxt">
+              <h1>Premium Online <br />Coaching</h1>
+              <p>Duration - 12 Months</p>
+              <h1>£99.00</h1>
+            </div>
+            <a
+              href="https://www.trainerize.me/checkout/dawidkosteckipt/Dawid.Kostecki?planGUID=06b18bcb21a64546ace0b0eced942b59&mode=checkout"
+              ><button>Purchase</button></a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-       <%- include('../partials/footer') %>
-    </footer>
-</body>
+    <footer><%- include('../partials/footer') %></footer>
+  </body>
 </html>

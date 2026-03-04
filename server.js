@@ -113,7 +113,6 @@ app.post('/send-email', async (req, res) => {
 // RENDER PAGES
 app.get('/', (req, res) => res.render('pages/index'));
 app.get('/martial-arts', (req, res) => res.render('pages/martial-arts'));
-app.get('/performance', (req, res) => res.render('pages/performance'));
 app.get('/online-coaching', (req, res) => res.render('pages/online-coaching'));
 app.get('/contact', (req, res) => res.render('pages/contact'));
 
