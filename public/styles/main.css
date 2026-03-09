@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    width: 100%;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #212121;
     color: #ffffff;
@@ -99,7 +99,7 @@ video{
     font:                           bolder 12vw 'Alfa Slab One';
     text-align:                     center;
     margin:                         0;
-    background:                     url("/assets/OnlineCoaching.jpg") center;
+    background:                     url("/assets/online.jpg") center;
     background-size:                contain;
     margin:                         auto;
     width:                          75vw;
@@ -452,4 +452,134 @@ Don't show */
 div {
     display: block;
     unicode-bidi: isolate;
+}
+
+
+
+
+/* --- FULL WIDTH MOBILE OVERRIDE --- */
+@media screen and (max-width: 768px) {
+
+    /* 1. RESET OVERFLOW & WIDTH */
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        overflow-x: hidden !important; /* This is crucial to stop the side-wobble */
+    }
+
+    /* 2. HEADER & NAVIGATION */
+    header nav {
+        margin: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px 0 !important;
+        flex-direction: column !important;
+    }
+
+    nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    nav li a {
+        padding: 12px 0 !important;
+        font-size: 20px !important;
+        display: block !important;
+    }
+
+    /* 3. ABOUT SECTION - BREAKING THE 60% WALL */
+    .about {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 40px 15px !important; /* Replaces the 200px padding */
+        flex-direction: column !important;
+        display: flex !important;
+        box-sizing: border-box !important;
+    }
+
+    .bio {
+        width: 100% !important;
+        font-size: 18px !important;
+        text-align: center !important;
+        padding: 0 !important;
+    }
+
+    .profilePic img {
+        width: 100% !important; /* Image fills screen width */
+        max-width: 350px !important; /* Prevents it from getting too huge on tablets */
+        height: auto !important;
+        margin: 0 auto 30px auto !important;
+    }
+
+    /* 4. THE BIG TEXT (Martial Arts/Performance) */
+    /* Forcing these from 75vw to 100% */
+    .textMartial, .textPerformance, .textOnline {
+        width: 100% !important;
+        font-size: 16vw !important; /* Dynamic size based on screen width */
+        margin: 20px 0 !important;
+        background-size: cover !important; /* Better image fill for mobile */
+    }
+
+    /* 5. PROGRAM CARDS */
+    .programCards {
+        padding: 10px !important;
+        gap: 30px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 650px !important; /* Prevents overlap while stacking */
+        margin: 0 0 20px 0 !important;
+        border-radius: 10px !important;
+    }
+
+    .card img {
+        width: 100% !important;
+        height: 450px !important;
+        border-radius: 10px !important;
+    }
+
+    /* 6. CONTACT FORM */
+    .form-grid {
+        grid-template-columns: 1fr !important; /* Stacks inputs vertically */
+    }
+    
+    .contact-container {
+        padding: 0 10px !important;
+    }
+
+    /* 7. FOOTER */
+    footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;   /* Centers horizontally */
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 40px 20px !important;
+    height: auto !important;
+}
+
+footer img {
+    margin: 0 auto 20px auto !important; /* Centers the DKPT logo */
+    display: block !important;
+}
+
+.socials {
+    display: flex !important;
+    justify-content: center !important; /* Centers the icons side-by-side */
+    width: 100% !important;
+    margin-top: 20px !important;
+    padding: 0 !important;
+}
+
+.socials img {
+    margin: 0 10px !important; /* Spacing between the icons */
+}
 }
