@@ -125,7 +125,7 @@ async function connectDB() {
         
         const PORT = process.env.PORT || 3200;
         app.listen(PORT, () => {
-            console.log(`Server running at http://localhost:${PORT}`);
+            console.log(`Server running at port:${PORT}`);
         });
     } catch (err) {
         console.error('Database connection failed', err);
