@@ -7,15 +7,10 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const fetch = require('node-fetch');
-const MongoClient = require('mongodb-legacy').MongoClient;
 
 const app = express();
 
-// DATABASE CONFIG
-const url = 'mongodb://127.0.0.1:27017';
-const client = new MongoClient(url);
-const dbname = 'hack';
-let db;
+
 
 // APP CONFIG
 app.use(session({ secret: 'example', resave: false, saveUninitialized: true }));
@@ -119,25 +114,11 @@ app.get('/contact', (req, res) => res.render('pages/contact'));
 
 
 
-// 3. START SERVER FIRST
+// Replace your entire connectDB function with just this:
 const PORT = process.env.PORT || 3200;
 app.listen(PORT, () => {
     console.log(`Server running at port:${PORT}`);
 });
-
-// 4. CONNECT TO DB SEPARATELY (Optional/Background)
-async function connectDB() {
-    try {
-        await client.connect();
-        db = client.db(dbname);
-        console.log('Connected Successfully to MongoDB');
-    } catch (err) {
-        // Log the error but let the app keep running
-        console.error('Database connection failed - Check if MongoDB is running on Hostinger:', err);
-    }
-}
-
-connectDB();
 
 
 
