@@ -116,8 +116,5 @@ app.get('/online-coaching', (req, res) => res.render('pages/online-coaching'));
 app.get('/contact', (req, res) => res.render('pages/contact'));
 
 // --- START SERVER ---
-// Hostinger uses process.env.PORT to assign a dynamic port
-const PORT = process.env.PORT || 3200;
-app.listen(PORT, () => {
-    console.log(`✅ Server running at port:${PORT}`);
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => console.log(`Listening on ${PORT}`));
