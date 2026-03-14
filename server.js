@@ -10,17 +10,26 @@ const fetch = require('node-fetch');
 
 const app = express();
 
+// --- APP CONFIG (PATH-AWARE) ---
+// This tells Express exactly where your folders are located relative to this file
+app.use(session({ 
+    secret: 'example', 
+    resave: false, 
+    saveUninitialized: true 
+}));
 
+// Serves CSS, JS, and Images from the public folder
+app.use(express.static(path.join(__dirname, 'public')));
 
-// APP CONFIG
-app.use(session({ secret: 'example', resave: false, saveUninitialized: true }));
-app.use(express.static('public'));
+// Tells Express to look in the /views folder for your EJS files
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// MIDDLEWARE (Unified)
+// MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// --- EMAIL ROUTE ---
 app.post('/send-email', async (req, res) => {
     const { name, email, dob, tel, subject, message } = req.body;
 
@@ -36,8 +45,8 @@ app.post('/send-email', async (req, res) => {
 
     try {
         await transporter.sendMail({
-            from: `"${name}" <${process.env.EMAIL_FROM}>`, // Shows user's name but uses your auth email
-            replyTo: email, // Clicking "Reply" goes to the user
+            from: `"${name}" <${process.env.EMAIL_FROM}>`, 
+            replyTo: email, 
             to: process.env.EMAIL_TO,
             subject: `🔥 New Inquiry: ${subject}`,
             html: `
@@ -79,12 +88,6 @@ app.post('/send-email', async (req, res) => {
                     <p style="margin-top: 10px; font-family: Arial, sans-serif; font-size: 11px; color: #D0021B; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">
                         Provided By
                     </p>
-                    <p style="margin-top: 10px; font-family: Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">
-                        <a href="https://abzdigitalgroup.com" 
-                        style="color: #D0021B !important; text-decoration: none !important; border: none !important;">
-                        abzdigitalgroup.com
-                        </a>
-                    </p>
                 </div>
             </div>
             `,
@@ -106,20 +109,15 @@ app.post('/send-email', async (req, res) => {
     }
 });
 
-// RENDER PAGES
+// --- ROUTES ---
 app.get('/', (req, res) => res.render('pages/index'));
 app.get('/martial-arts', (req, res) => res.render('pages/martial-arts'));
 app.get('/online-coaching', (req, res) => res.render('pages/online-coaching'));
 app.get('/contact', (req, res) => res.render('pages/contact'));
 
-
-
-// Replace your entire connectDB function with just this:
+// --- START SERVER ---
+// Hostinger uses process.env.PORT to assign a dynamic port
 const PORT = process.env.PORT || 3200;
 app.listen(PORT, () => {
-    console.log(`Server running at port:${PORT}`);
+    console.log(`✅ Server running at port:${PORT}`);
 });
-
-
-
-
