@@ -30,7 +30,7 @@ app.post('/send-email', async (req, res) => {
 
     const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
-        port: 465,
+        port: process.env.SMTP_PORT,
         secure: true, 
         auth: {
             user: process.env.SMTP_USER,
@@ -94,11 +94,11 @@ app.post('/send-email', async (req, res) => {
             `,
             attachments: [{
                 filename: 'logo.png',
-                path: __dirname + '/public/assets/DawidKosteckiLogo.png',
+                path: path.join(__dirname, 'public', 'assets', 'DawidKosteckiLogo.png'),
                 cid: 'logo' 
             },{
                 filename: 'abzLogo.png',
-                path: __dirname + '/public/assets/ABZ_Digital_Group_Logo.png',
+                path: path.join(__dirname, 'public', 'assets', 'ABZ_Digital_Group_Logo.png'),
                 cid: 'abzLogo' 
             }]
         });
