@@ -71,22 +71,8 @@ video{
     font:                           bolder 12vw 'Alfa Slab One';
     text-align:                     center;
     margin:                         0;
-    background:                     url("/assets/Performance.jpg") center;
+    background:                     url("/assets/martialArts.jpg") center;
     background-size:                contain;
-    margin:                         auto;
-    width:                          75vw;
-    background-clip:                text;
-    -webkit-background-clip:        text;
-    color:                          transparent;
-}
-
-.textPerformance{
-    
-    font:                           bolder 12vw 'Alfa Slab One';
-    text-align:                     center;
-    margin:                         0;
-    background:                     url("/assets/Performance.jpg") center;
-    background-size:                fit;
     margin:                         auto;
     width:                          75vw;
     background-clip:                text;
