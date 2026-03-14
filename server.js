@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 
 // LOAD NPM PACKAGES
 const express = require('express');
