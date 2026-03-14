@@ -1,6 +1,12 @@
 {
-"dependencies": {
-    "cors": "^2.8.5",
+
+  "name": "dawid-kostecki-pt",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
@@ -8,14 +14,7 @@
     "node-fetch": "^2.7.0",
     "nodemailer": "^6.9.13"
   },
-  "name": "dawid_kostecki_pt",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "dev": "nodemon --watch public --watch server.js --ext js,html,css",
-    "start": "node server.js"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ABZ-Digital-Group/Dawid_Kostecki_PT.git"
