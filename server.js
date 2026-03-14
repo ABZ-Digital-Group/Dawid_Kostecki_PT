@@ -116,20 +116,28 @@ app.get('/martial-arts', (req, res) => res.render('pages/martial-arts'));
 app.get('/online-coaching', (req, res) => res.render('pages/online-coaching'));
 app.get('/contact', (req, res) => res.render('pages/contact'));
 
-// 3. FIXED DATABASE CONNECTION & SERVER START (Only one app.listen)
+
+
+// 3. START SERVER FIRST
+const PORT = process.env.PORT || 3200;
+app.listen(PORT, () => {
+    console.log(`Server running at port:${PORT}`);
+});
+
+// 4. CONNECT TO DB SEPARATELY (Optional/Background)
 async function connectDB() {
     try {
         await client.connect();
         db = client.db(dbname);
         console.log('Connected Successfully to MongoDB');
-        
-        const PORT = process.env.PORT || 3200;
-        app.listen(PORT, () => {
-            console.log(`Server running at port:${PORT}`);
-        });
     } catch (err) {
-        console.error('Database connection failed', err);
+        // Log the error but let the app keep running
+        console.error('Database connection failed - Check if MongoDB is running on Hostinger:', err);
     }
 }
 
 connectDB();
+
+
+
+
